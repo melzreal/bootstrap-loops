@@ -6,9 +6,18 @@ body > h1{
 #home-section{
     background-image: url("/img/nasa-unsplash.jpg");
     background-size: 100%;
+    width: 100%;
+    background-position: top;
     background-repeat: no-repeat;
     min-height: 700px;
 
+}
+
+@media(max-width: 700px){
+    #home-section{
+        background-size: cover;
+       
+    }
 }
 
 
@@ -37,17 +46,19 @@ body > h1{
    
     color: #211d1d;
     background: #fff;
-    padding: 5px;
-    border-radius: 2px;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 #explore-head-section, #create-head-section{
-    padding-top: 15%;
+    padding: 10%;
     background-image: url("/img/andrea-guadagno-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 600px;
 }
+
+
 
 #explore-section{
 
