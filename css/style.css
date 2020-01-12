@@ -1,0 +1,24 @@
+/* .navbar{
+    color: #fff;
+
+} */
+#home-section{
+    background-image: url("/img/nasa-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+
+}
+
+
+#home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.navbar {
+    opacity: 0.9;
+    
+}
