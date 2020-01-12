@@ -1,12 +1,10 @@
-/* .navbar{
-    color: #fff;
 
-} */
+
 #home-section{
     background-image: url("/img/nasa-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 700px;
+    min-height: 700px;
 
 }
 
@@ -16,9 +14,45 @@
     top: 0;
     left: 0; 
     width: 100%;
+    min-height: 700px;
     background: rgba(0,0,0,0.7);
 }
 .navbar {
     opacity: 0.9;
     
+}
+
+#home-section .home-inner{
+    padding-top: 150px;
+}
+
+#home-section .card-form{
+    opacity: 0.8;
+}
+
+#home-section .fas{
+   
+    color: #211d1d;
+    background: #fff;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#explore-head-section{
+    background-image: url("/img/andrea-guadagno-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+#explore-section{
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+#create-head-section{
+   
+    min-height: 600px;
 }
