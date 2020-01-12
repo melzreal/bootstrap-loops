@@ -1,4 +1,7 @@
-
+body > h1{
+    
+    color: #fff;
+}
 
 #home-section{
     background-image: url("/img/nasa-unsplash.jpg");
@@ -38,7 +41,8 @@
     border-radius: 2px;
 }
 
-#explore-head-section{
+#explore-head-section, #create-head-section{
+    padding-top: 15%;
     background-image: url("/img/andrea-guadagno-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -49,10 +53,5 @@
 
     background-size: 100%;
     background-repeat: no-repeat;
-    min-height: 600px;
-}
-
-#create-head-section{
-   
     min-height: 600px;
 }

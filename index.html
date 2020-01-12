@@ -10,10 +10,10 @@
 
     <title>BootStrap Theme</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top" id="main-nav">
         <div class="container">
             <a href="index html" class="navbar-brand"> BrotherLoops</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href=#home" class="nav-link"> Home </a>
+                        <a href="#home" class="nav-link"> Home </a>
                     </li>
                     <li class="nav-item">
-                        <a href=#explore" class="nav-link"> Of </a>
+                        <a href="#explore-head-section" class="nav-link"> Of </a>
                     </li>
                     <li class="nav-item">
-                        <a href=#create" class="nav-link"> These </a>
+                        <a href="#create-head-section" class="nav-link"> These </a>
                     </li>
                     <li class="nav-item">
-                        <a href=#share" class="nav-link"> Loops </a>
+                        <a href="#main-footer" class="nav-link"> Loops </a>
                     </li>
                 </ul>
             </div>
@@ -43,38 +43,38 @@
             <div class="home-inner container">
                 <div class="row">
                     <div class="col-lg-8 d-none d-lg-block">
-                        <h1 class="display-4">
+                        <h1 class="display-4 text-light">
                              Making so much shenanigans in bootstraps </h1>
 
                         <div class="d-flex">
                             <div class="p4 align-self-start">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-meteor fa-2x"></i>
                             </div>
-                            <div class="p-4 align-self-end">
+                            <div class="p-4 align-self-end text-light">
                                 Boop boop
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="p4 align-self-start">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-meteor fa-2x"></i>
                             </div>
-                            <div class="p-4 align-self-end">
+                            <div class="p-4 align-self-end text-light">
                                 Boop boop
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="p4 align-self-start">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-meteor fa-2x"></i>
                             </div>
-                            <div class="p-4 align-self-end">
+                            <div class="p-4 align-self-end text-light">
                                 Boop boop
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="p4 align-self-start">
-                                <i class="fas fa-check fa-2x"></i>
+                                <i class="fas fa-meteor fa-2x"></i>
                             </div>
-                            <div class="p-4 align-self-end">
+                            <div class="p-4 align-self-end text-light">
                                 Badoom boom
                             </div>
                         </div>
@@ -264,6 +264,24 @@
 
     <script>
     $('#year').text(new Date().getFullYear());
+
+    $('body').scrollspy({ target: '#main-nav' });
+
+// Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+        window.location.hash = hash;
+        });
+    }
+    });
     </script>
 </body>
 </html>
